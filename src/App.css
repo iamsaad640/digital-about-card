@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.App{
+  display: grid;
+  grid-template-columns: 1;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #23252C;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.App-card{
+  width:317px;
+  border-radius: 10px;
+  overflow: hidden;
+  color:white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-inner-container{
+  background-color: #1A1B21;
+  padding:21px 35px;
+  display: flex;
+  flex-direction: column;
+  height: 399px;
+  justify-content: space-between;
+}
+
+.card-img{
+  display: block;
+  width:317px;
+  height:317px;  
+}
+
+.card-name{
+  font-weight: 700;
+  font-size: 25px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.name-role{
+  font-size: 12.8px;
+  text-align: center;
+  color: #F3BF99;
+  line-height: 15px;
+
+
+}
+
+.name-mail{
+  font-size: 10.8px;
+  text-align: center;
+  line-height: 150%;
+}
+
+.button {
+  font-size: 14px;
+  font-weight: 500;
+  padding:9px 0;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  text-align: center;
+  width:115px;
+  display: inline-block;
+
+}
+
+.button img{
+  margin-right: 9.6px;
+}
+
+.btn-white{
+  background-color: #fff;
+  color:black;
+  margin-right:17px;
+}
+
+.btn-blue{
+  background-color: #5093E2;
+  color:white;
+}
+
+.card-detail-heading{
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.card-des{
+  font-weight: 400;
+  font-size: 10.24px;
+}
+
+.social-container{
+  background-color: #161619;
+  height:64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.social-container > img{
+  width:25px;
+}
+
+a{
+  color: none;
+  text-decoration: none;
 }
